@@ -1,0 +1,23 @@
+Anexa responsabilidades adicionais
+a um objeto de maneira dinâmica.
+
+Problema:
+→ Em algumas situações é necessário adicionar responsabilidades à
+objetos específicos, e não a toda a classe.
+→ O padrão de projeto Decorator resolve o problema, permitindo que tais
+responsabilidades sejam adicionadas individualmente, em tempo de
+execução.
+
+Participantes:
+As classes e/ou objetos que participam do padrão são:
+Component
+    - Define a interface dos objetos que podem ter responsabilidades
+    adicionadas de forma dinâmica.
+ConcreteComponent
+    - Define um objeto ao qual mais responsabilidades podem ser
+    adicionadas.
+Decorator
+    - Armazena a referência para um objeto Component, cujo
+    comportamento será modificado.
+ConcreteDecorator
+    - Adiciona responsabilidades ao componente.

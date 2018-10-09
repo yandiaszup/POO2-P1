@@ -1,0 +1,8 @@
+Problema: Evitar o acoplamento do remetente de uma solicitação ao receptor
+fornecendo uma cadeia de objetos para tratar uma solicitação.
+● O objeto que fez a solicitação não tem conhecimento explícito de quem a tratará –
+essa solicitação é dita ter um receptor implícito.
+● Representa um encadeamento de objetos receptores para o processamento de
+uma série de solicitações diferentes.
+● Esses objetos receptores passam a solicitação ao longo da cadeia até que um ou vários
+objetos a tratem.

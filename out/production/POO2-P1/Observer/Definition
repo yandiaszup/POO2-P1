@@ -1,0 +1,33 @@
+▪Definir uma dependência um-para-muitos entre objetos, de
+forma quando o estado de um objeto em particular
+(observado) se altera, seus dependentes (observadores) são
+notificados.
+
+▪Os objetos observadores podem, assim, desencadear as
+ações necessárias.
+
+▪Evita que um ou mais objeto precise monitorar constantemente
+o estado de outro(s) objeto(s).
+
+Participantes:
+--------Subject
+▪Representa uma abstração do sujeito a ser observado.
+▪ Fornece uma interface para adicionar e remover objetos Observer.
+▪ Conhece os seus observadores. Qualquer número de objetos Observer
+pode observar um Subject.
+
+-------ConcreteSubject
+▪Implementa uma classe de sujeitos concretos.
+▪Armazena os estados que interessam ao ConcreteObserver.
+▪Envia uma notificação aos Observers, quando o seu estado se altera
+
+-------Observer
+▪Define uma interface para os objetos observadores, que
+devem ser notificados de alterações no Subject.
+
+--------ConcreteObserver
+▪Mantém uma referência para o objeto ConcreteSubject.
+▪Implementa a interface de atualização definida em
+Observer, de forma a executar ações necessária quando
+notificado
+

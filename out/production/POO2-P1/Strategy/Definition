@@ -1,0 +1,31 @@
+▪Permite definir famílias de comportamentos, que podem
+ser (re)utilizados de forma intercambiável.
+
+▪Permite que o algoritmo varie independentemente dos
+clientes que o usam.
+
+▪Cada comportamento é encapsulado em uma classe.
+
+▪Deve-se perceber o que varia nas subclasses e encapsular
+à parte (famílias de comportamentos reutilizáveis).
+
+▪É útil quando se tem operações comuns a uma série de
+sub-classes, mas não é possível o uso de herança de forma
+eficiente.
+
+///////////////////////////////////////////////////////////
+▪O padrão Strategy nos conduz a seguinte orientação:
+1 - Programe sempre para interfaces;
+2 - Dê preferência a composição ao invés de herança.
+
+////////////////////////////////////////////////////////////
+
+Esse padrão tem como elementos participantes
+▪Context, que tem seu "comportamento" ou parte dele
+definido pelo algoritmo implementado por uma Strategy;
+
+▪Strategy, que define a interface comum para todos os
+comportamentos;
+
+▪ConcreteStrategy, que implementa o comportamento
+definido pela interface Strategy.
