@@ -16,4 +16,24 @@ public abstract class BancoChain {
             next.setNext(forma);
         }
     }
-}
+
+    public void efetuarPagamento(IDBancos id) throws Exception{
+        if(podeEfetuarPagamento(id)){
+            efetuaPagamento();
+        }   else    {
+            if (next == null){
+                throw  new Exception("banco não cadastrado");
+            }
+            next.efetuarPagamento(id);
+        }
+    }
+
+    public boolean podeEfetuarPagamento(IDBancos id){
+        if(identificadorDoBanco == id){
+            return true;
+        }
+        return false;
+    }
+
+    protected  abstract void efetuaPagamento();
+    }

@@ -21,3 +21,11 @@ Decorator
     comportamento será modificado.
 ConcreteDecorator
     - Adiciona responsabilidades ao componente.
+
+ Use o padrão Decorator quando:
+     Acrescentar responsabilidades a objetos individuais
+    de forma dinâmica e transparente (sem afetar
+    outros objetos)
+     Para responsabilidades que podem ser removidas
+     Quando a extensão através de subclasses não é
+    prática

@@ -1,0 +1,12 @@
+Contextos em que só deva existir um único
+objeto de uma classe
+
+Uma maneira de garantir que haja somente um
+único objeto de uma determinada classe
+
+Aplicabilidade
+
+Quando for necessário existir apenas uma
+única instância de uma classe, e essa
+instância deve dar acesso aos clientes através
+de um ponto bem conhecido
